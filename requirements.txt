@@ -1,0 +1,29 @@
+# Core dependencies (from original requirements.txt)
+Flask==3.0.3
+python-dotenv==1.0.1
+requests==2.32.3
+
+# HTTP request enhancements
+urllib3==2.2.1
+
+# PySpark for distributed data processing
+pyspark==3.5.0
+
+# Snowflake connector for Spark
+snowflake-connector-python==3.7.0
+
+# Additional Snowflake utilities (optional but recommended)
+snowflake-sqlalchemy==1.5.1
+
+# Data processing and validation
+pandas==2.2.1  # For local data inspection/debugging
+pyarrow==15.0.0  # Required for efficient Spark <-> Pandas conversions
+
+# Monitoring and logging
+py4j==0.10.9.7  # PySpark dependency (usually auto-installed)
+
+# Development and testing (optional)
+pytest==8.0.2
+pytest-cov==4.1.0
+black==24.2.0
+pylint==3.1.0

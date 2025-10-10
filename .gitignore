@@ -1,0 +1,163 @@
+# ============================================================
+# CEIPAL ETL Project - Git Ignore File
+# ============================================================
+
+# ====================
+# Python
+# ====================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ====================
+# Environment & Secrets
+# ====================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+secrets/
+
+# ====================
+# IDEs & Editors
+# ====================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# ====================
+# PySpark & Spark
+# ====================
+spark-warehouse/
+metastore_db/
+derby.log
+*.log
+*.jar
+
+# ====================
+# Snowflake
+# ====================
+# Snowflake connection cache (if any)
+.snowflake/
+
+# ====================
+# Output & Data Files
+# ====================
+# ETL outputs (comment out if you want to track outputs)
+output/*.json
+output/*.csv
+output/*.parquet
+
+# Keep output directory structure
+!output/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ====================
+# Logs
+# ====================
+logs/
+*.log
+*.log.*
+
+# ====================
+# OS Specific
+# ====================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ====================
+# Project Specific
+# ====================
+# Legacy backup folder
+_legacy_backup/
+
+# Large data files
+*.zip
+*.tar.gz
+*.7z
+
+# Database dumps
+*.sql.gz
+*.dump

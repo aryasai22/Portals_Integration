@@ -1,29 +1,41 @@
-# Core dependencies (from original requirements.txt)
-Flask==3.0.3
-python-dotenv==1.0.1
-requests==2.32.3
 
-# HTTP request enhancements
-urllib3==2.2.1
+# Python dependencies for CEIPAL ETL pipeline
 
-# PySpark for distributed data processing
-pyspark==3.5.0
+# Core
+python-dotenv==1.1.1
+requests==2.32.5
+urllib3==2.5.0
 
-# Snowflake connector for Spark
-snowflake-connector-python==3.7.0
+# PySpark and data processing
+pyspark==4.0.1
+pandas==2.2.1
+pyarrow==21.0.0
+numpy>=1.22.4,<2.0.0
 
-# Additional Snowflake utilities (optional but recommended)
-snowflake-sqlalchemy==1.5.1
+# Snowflake
+snowflake-connector-python>=3.7.0,<4.0.0
+snowflake-sqlalchemy>=1.5.1
+SQLAlchemy>=1.4.0,<2.0.0
 
-# Data processing and validation
-pandas==2.2.1  # For local data inspection/debugging
-pyarrow==15.0.0  # Required for efficient Spark <-> Pandas conversions
+# Security
+cryptography>=41.0.0
+cffi>=1.9
+pyOpenSSL>=22.0.0
+PyJWT>=2.0.0,<3.0.0
 
-# Monitoring and logging
-py4j==0.10.9.7  # PySpark dependency (usually auto-installed)
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2020.1
+typing-extensions>=4.0.1
+packaging>=20.0
 
-# Development and testing (optional)
-pytest==8.0.2
-pytest-cov==4.1.0
-black==24.2.0
-pylint==3.1.0
+# Config and validation
+pydantic>=2.0.0,<3.0.0
+pydantic-settings>=2.0.0,<3.0.0
+
+# Dev tools
+pytest==8.4.2
+pytest-cov==7.0.0
+black==25.9.0
+pylint==4.0.0
+isort>=5.0.0

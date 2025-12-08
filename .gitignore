@@ -1,67 +1,29 @@
-# ============================================================
-# CEIPAL ETL Project - Git Ignore File
-# ============================================================
-
-# ====================
 # Python
-# ====================
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
 
 # Virtual Environments
 .venv/
 venv/
 ENV/
 env/
-.virtualenv/
 
-# PyInstaller
-*.manifest
-*.spec
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
 
-# Unit test / coverage reports
+# Testing
+.pytest_cache/
+.coverage
 htmlcov/
 .tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
 *.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
 
-# ====================
 # Environment & Secrets
-# ====================
 .env
 .env.local
 .env.*.local
@@ -70,51 +32,30 @@ coverage.xml
 credentials.json
 secrets/
 
-# ====================
-# IDEs & Editors
-# ====================
-# VSCode
+# IDEs
 .vscode/
-*.code-workspace
-
-# PyCharm
 .idea/
 *.iml
-
-# Jupyter Notebook
 .ipynb_checkpoints/
 
-# Spyder
-.spyderproject
-.spyproject
-
-# ====================
-# PySpark & Spark
-# ====================
+# PySpark
 spark-warehouse/
 metastore_db/
 derby.log
+
+# Logs
+logs/
 *.log
-*.jar
 
-# ====================
-# Snowflake
-# ====================
-# Snowflake connection cache (if any)
-.snowflake/
-
-# ====================
-# Output & Data Files
-# ====================
-# ETL outputs (comment out if you want to track outputs)
-output/*.json
-output/*.csv
-output/*.parquet
-
-# Keep output directory structure
+# ETL Output Files
+output/
 !output/.gitkeep
+*.json
+*.csv
+*.parquet
+!tests/fixtures/*.json
 
-# Temporary files
+# Temporary Files
 *.tmp
 *.temp
 *.bak
@@ -122,42 +63,16 @@ output/*.parquet
 *.swo
 *~
 
-# ====================
-# Logs
-# ====================
-logs/
-*.log
-*.log.*
-
-# ====================
-# OS Specific
-# ====================
-# Windows
+# OS
 Thumbs.db
-ehthumbs.db
+.DS_Store
 Desktop.ini
 $RECYCLE.BIN/
-*.lnk
 
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Linux
-*~
-
-# ====================
-# Project Specific
-# ====================
-# Legacy backup folder
-_legacy_backup/
-
-# Large data files
+# Data Files
 *.zip
 *.tar.gz
 *.7z
-
-# Database dumps
 *.sql.gz
 *.dump
+_legacy/

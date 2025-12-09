@@ -1,6 +1,6 @@
 # CEIPAL to Snowflake ETL Pipeline
 
-Extracts workforce data from CEIPAL API and loads it into Snowflake using a three-layer architecture (Bronze/Silver/Gold). You can test locally with JSON files before deploying to Snowflake.
+Extracts workforce data from CEIPAL API and loads it into Snowflake using a three-layer architecture (Bronze/Silver/Gold). Supports local testing with JSON files before deploying to Snowflake.
 
 ## Prerequisites
 

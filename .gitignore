@@ -49,7 +49,6 @@ logs/
 
 # ETL Output Files
 output/
-!output/.gitkeep
 *.json
 *.csv
 *.parquet
